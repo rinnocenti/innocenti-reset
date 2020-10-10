@@ -104,6 +104,7 @@ export let LongRest = async function (category = 0, dialog = true, newDay = true
         case 'gritty': restFlavor = game.i18n.localize("DND5E.LongRestGritty"); break;
         case 'epic': restFlavor = game.i18n.localize("DND5E.LongRestEpic"); break;
     }
+    restFlavor += ` category ${category}`;
 
     // Determine the chat message to display
     if (chat) {
