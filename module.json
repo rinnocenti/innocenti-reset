@@ -3,7 +3,7 @@
   "title": "Innocenti LongResets",
   "description": "<p>Modulo para Controlar Categorias diferentes de LongReset</p>",
   "author": "Renato innocenti",
-  "version": "1.0",
+  "version": "0.3",
   "minimumCoreVersion": "0.6.6",
   "compatibleCoreVersion": "0.7.x",
   "esmodules": [ "main.js" ],
@@ -16,7 +16,7 @@
     {
       "name": "item-longreset",
       "label": "Custom Items LongReset",
-      "path": "packs/item-lonreset.db",
+      "path": "packs/custom-items-longreset.db",
       "module": "innocenti-reset",
       "entity": "Item"
     }
