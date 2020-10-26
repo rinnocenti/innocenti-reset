@@ -31,6 +31,7 @@ export let LongRest = async function (category = 0, dialog = true, newDay = true
         let halfhp = Math.round(data.attributes.hp.max / 2);
         let conmod = Math.round((data.abilities.con.value - 10) / 2);
         dhp = (data.attributes.hp.value < halfhp) ? halfhp : data.attributes.hp.value + conmod;
+        dhp = (dhp >data.attributes.hp.max)?data.attributes.hp.max:dhp;
         updateData["data.attributes.hp.value"] = dhp;
         dhp -= data.attributes.hp.value;
     } else {
